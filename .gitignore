@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Secretos / entorno local — nunca trackear
+.env
+.env.*
+!.env.example
+
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+runtime/
+*.db
