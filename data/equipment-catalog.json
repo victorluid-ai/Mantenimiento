@@ -1,0 +1,903 @@
+{
+  "equipment": [
+    {
+      "category": "Horno combi",
+      "brand": "Rational",
+      "model": "iCombi Pro 10-1/1",
+      "manual_url": "https://toolbox.rational-online.com/direct-download/1612558/155395/IFU_20.048_RATIONAL_Manual%20de%20instrucciones%20original_iCombi%20Pro_Table%20Units_es-MX.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "rat-icombi-01",
+          "title": "Ejecutar limpieza automática iCareSystem (productos originales Rational)",
+          "interval": "diaria",
+          "source_note": "Instrucciones de mantenimiento Rational iCombi (es_ES); cap. limpieza/iCareSystem del IFU 20.048"
+        },
+        {
+          "id": "rat-icombi-02",
+          "title": "Limpiar superficie exterior con paño húmedo suave (sin vapor ni chorro a presión)",
+          "interval": "diaria",
+          "source_note": "Instrucciones de mantenimiento Rational iCombi — Limpieza intermedia"
+        },
+        {
+          "id": "rat-icombi-03",
+          "title": "Limpiar cristal interior de la cámara de cocción",
+          "interval": "diaria",
+          "source_note": "Instrucciones de mantenimiento Rational iCombi — Cristal interior"
+        },
+        {
+          "id": "rat-icombi-04",
+          "title": "Limpiar junta de la puerta (especialmente tras parrilla o >220 °C)",
+          "interval": "diaria",
+          "source_note": "Instrucciones de mantenimiento Rational iCombi — Junta de la puerta"
+        },
+        {
+          "id": "rat-icombi-05",
+          "title": "Vaciar y lavar bandejas recogegotas (equipo y puerta) con 1–2 L de agua tibia",
+          "interval": "diaria",
+          "source_note": "Instrucciones de mantenimiento Rational iCombi — Bandeja recogegotas"
+        },
+        {
+          "id": "rat-icombi-06",
+          "title": "Hacer circular agua por la ducha de mano 30 s (2 veces al día)",
+          "interval": "diaria",
+          "source_note": "Instrucciones de mantenimiento Rational iCombi — Ducha de mano"
+        },
+        {
+          "id": "rat-icombi-07",
+          "title": "Limpiar o cambiar el filtro de aire del panel de control",
+          "interval": "mensual",
+          "source_note": "IFU 20.048 cap. Mantenimiento / Instrucciones mantenimiento — Cambiar/limpiar filtro de aire"
+        },
+        {
+          "id": "rat-icombi-08",
+          "title": "Sustituir junta de la puerta de la cámara cuando esté gastada",
+          "interval": "anual",
+          "source_note": "IFU 20.048 — Cambiar la junta de la puerta; mantenimiento técnico anual autorizado Rational"
+        },
+        {
+          "id": "rat-icombi-09",
+          "title": "Mantenimiento técnico por servicio autorizado Rational",
+          "interval": "anual",
+          "source_note": "IFU 20.048 — mantenimiento únicamente por servicio autorizado; al menos una vez al año"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Rational IFU 20.048 Manual de instrucciones original iCombi Pro (table units, es-MX)",
+          "url": "https://toolbox.rational-online.com/direct-download/1612558/155395/IFU_20.048_RATIONAL_Manual%20de%20instrucciones%20original_iCombi%20Pro_Table%20Units_es-MX.pdf"
+        },
+        {
+          "name": "Rational — Instrucciones de mantenimiento iCombi (hoja es_ES, distribuidor Hostelería10)",
+          "url": "https://hosteleria10.com/recursos/pdfs/rational-mantenimiento-icombi.pdf"
+        }
+      ]
+    },
+    {
+      "category": "Freidora",
+      "brand": "Electrolux Professional",
+      "model": "700XP 371085 (E7FREH2FF0) — freidora eléctrica 14+14 L, serie N7E",
+      "manual_url": "https://tools.electroluxprofessional.com/Mirror/Doc/HB/HB_59589DY01_7_5_INOM_59589DY01_FRYERSN7E-default_07_en.pdf?version=1787176825",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "elx-fry-01",
+          "title": "Limpieza general del aparato y zona circundante",
+          "interval": "diaria",
+          "source_note": "Manual N7E Fryers 59589DY01 §H.3 — Ordinary cleaning Daily / Operator"
+        },
+        {
+          "id": "elx-fry-02",
+          "title": "Limpiar superficies de acero satinado en frío con agua jabonosa; secar",
+          "interval": "diaria",
+          "source_note": "§H.5 External parts — Satin-finish steel surfaces (daily)"
+        },
+        {
+          "id": "elx-fry-03",
+          "title": "Vaciar y limpiar bandejas/cajones de recogida de aceite y residuales",
+          "interval": "diaria",
+          "source_note": "§H.6 Other surfaces — Tanks and collection drawers (even several times a day)"
+        },
+        {
+          "id": "elx-fry-04",
+          "title": "Limpiar filtro de aceite (desengrasar, aclarar, secar; sustituir si deteriorado)",
+          "interval": "diaria",
+          "source_note": "§H.7 Cleaning filters"
+        },
+        {
+          "id": "elx-fry-05",
+          "title": "Vaciar aceite, elevar resistencias y limpiar cuba y elementos calefactores (con equipo frío)",
+          "interval": "semanal",
+          "source_note": "§G.8 Draining oil + §H.8 Cleaning fryers with internal heating elements"
+        },
+        {
+          "id": "elx-fry-06",
+          "title": "Revisión de partes internas y sistema de descarga por técnico especializado",
+          "interval": "semestral",
+          "source_note": "§H.9 Internal parts (every 6 months) — specialised personnel"
+        },
+        {
+          "id": "elx-fry-07",
+          "title": "Revisión anual: protecciones, tornillería, cable, panel eléctrico, señales de seguridad",
+          "interval": "anual",
+          "source_note": "§H.3 Maintenance intervals — Yearly / Service"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Electrolux Professional — Installation and operating manual Fryers N7E (59589DY01)",
+          "url": "https://tools.electroluxprofessional.com/Mirror/Doc/HB/HB_59589DY01_7_5_INOM_59589DY01_FRYERSN7E-default_07_en.pdf?version=1787176825"
+        },
+        {
+          "name": "Electrolux Professional — Documentation portal",
+          "url": "https://www.electroluxprofessional.com/documentation/"
+        }
+      ]
+    },
+    {
+      "category": "Plancha / Frytop",
+      "brand": "Electrolux Professional",
+      "model": "700XP 371194 — frytop eléctrico 800 mm, placa cromo pulido lisa (serie EFT7*/N7E)",
+      "manual_url": "https://tools.electroluxprofessional.com/Mirror/DOC/HB/HB_59589G300_1_13_INOM_59589G300_FRY%20TOP%20CHR_%20N7E_ES.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "elx-ft-01",
+          "title": "Limpieza general de la máquina y zona circundante",
+          "interval": "diaria",
+          "source_note": "Manual EFT7* N7E ES §G.4 — Limpieza habitual diaria / Operador"
+        },
+        {
+          "id": "elx-ft-02",
+          "title": "Limpiar superficies de acero satinado en frío; secar",
+          "interval": "diaria",
+          "source_note": "§G.1.3 Partes externas — SUPERFICIES DE ACERO SATINADO (a diario)"
+        },
+        {
+          "id": "elx-ft-03",
+          "title": "Durante cocción: raspar placa lisa con rascador / acanalada con espátula dentada (utensilios inox)",
+          "interval": "diaria",
+          "source_note": "§G.1.4 Superficies cromadas pts. 3–4"
+        },
+        {
+          "id": "elx-ft-04",
+          "title": "Al final de jornada, con placa fría: limpiar con esponja (opcional vinagre) y secar; sin abrasivos ni cloro",
+          "interval": "diaria",
+          "source_note": "§G.1.4 pts. 6–7"
+        },
+        {
+          "id": "elx-ft-05",
+          "title": "Vaciar y limpiar recipientes/cajones de recogida de grasa",
+          "interval": "diaria",
+          "source_note": "§G.1.4 Recipientes y cajones de recogida (varias veces al día)"
+        },
+        {
+          "id": "elx-ft-06",
+          "title": "No enfriar ni limpiar la placa caliente con hielo o agua (riesgo de deformación)",
+          "interval": "diaria",
+          "source_note": "§G.1.1 advertencias — No utilice hielo ni agua…"
+        },
+        {
+          "id": "elx-ft-07",
+          "title": "Eliminar suciedad interior del aparato / revisar piezas internas y descarga (técnico)",
+          "interval": "semestral",
+          "source_note": "§G.4 — Cada 6 meses / Service"
+        },
+        {
+          "id": "elx-ft-08",
+          "title": "Mantenimiento preventivo anual (gas si aplica, panel eléctrico, cable, protecciones)",
+          "interval": "anual",
+          "source_note": "§G.4 Intervalos de mantenimiento — Anual / Servicio"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Electrolux Professional — Manual instalación/uso Frytop EFT7* N7E (ES)",
+          "url": "https://tools.electroluxprofessional.com/Mirror/DOC/HB/HB_59589G300_1_13_INOM_59589G300_FRY%20TOP%20CHR_%20N7E_ES.pdf"
+        },
+        {
+          "name": "Ficha producto 371194 (GB)",
+          "url": "https://www.electroluxprofessional.com/gb/pd/cooking/e-xp-700/fry-tops/electric-fry-tops/modular-cooking-range-line-700xp-800mm-electric-fry-top-smooth-polished-chrome-plate-371194/"
+        }
+      ]
+    },
+    {
+      "category": "Lavavajillas",
+      "brand": "Winterhalter",
+      "model": "UC Series (UC-S / UC-M / UC-L / UC-XL)",
+      "manual_url": "https://media.winterhalter.com/mc/mediabase?assetId=516749",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "wh-uc-01",
+          "title": "Apagar con programa de autolimpieza al final de la jornada",
+          "interval": "diaria",
+          "source_note": "Operating instructions UC Series §8.1 Self-cleaning programme"
+        },
+        {
+          "id": "wh-uc-02",
+          "title": "Limpiar interior de la máquina tras autolimpieza (según vídeo/pasos del display)",
+          "interval": "diaria",
+          "source_note": "§8.1 Cleaning the warewasher interior"
+        },
+        {
+          "id": "wh-uc-03",
+          "title": "Limpiar exterior de la máquina",
+          "interval": "diaria",
+          "source_note": "§8.1 Cleaning the outside of the warewasher"
+        },
+        {
+          "id": "wh-uc-04",
+          "title": "Limpiar campos de lavado superior e inferior (boquillas/jets)",
+          "interval": "diaria",
+          "source_note": "§8.1 Cleaning the upper and lower wash field"
+        },
+        {
+          "id": "wh-uc-05",
+          "title": "Reponer sal de regeneración cuando lo indique la máquina",
+          "interval": "cuando_indique",
+          "source_note": "§8.2 Topping up the regeneration salt"
+        },
+        {
+          "id": "wh-uc-06",
+          "title": "Ejecutar programa de descalcificación del interior (fin de jornada; desincrustante A 70 LS recomendado)",
+          "interval": "cuando_indique",
+          "source_note": "§4.2.9 / §8.6 Descaling — al final del día de trabajo"
+        },
+        {
+          "id": "wh-uc-07",
+          "title": "Sustituir filtro de carbón activo (si opción Excellence-i) y resetear contador",
+          "interval": "cuando_indique",
+          "source_note": "§8.7 Changing the activated carbon filter"
+        },
+        {
+          "id": "wh-uc-08",
+          "title": "Mantenimiento por servicio técnico Winterhalter",
+          "interval": "anual",
+          "source_note": "§8.8 Maintenance by the customer service department"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Winterhalter — Operating instructions UC Series (doc. 89014383, media oficial)",
+          "url": "https://media.winterhalter.com/mc/mediabase?assetId=516749"
+        },
+        {
+          "name": "Winterhalter Download Centre",
+          "url": "https://www.winterhalter.com/download-centre/"
+        }
+      ]
+    },
+    {
+      "category": "Cortadora / Slicer",
+      "brand": "Hobart",
+      "model": "HS9 / HS9N",
+      "manual_url": "https://www.webstaurantstore.com/documents/pdf/hs_manual.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "hob-hs-01",
+          "title": "Desenchufar, cerrar placa de grosor y limpiar/desinfectar todas las superficies",
+          "interval": "diaria",
+          "source_note": "Form 35284 — CLEANING: thoroughly cleaned and sanitized… as often as required by local regulation"
+        },
+        {
+          "id": "hob-hs-02",
+          "title": "Desmontar afilador, bandeja de producto, prensa y tapas; lavar, aclarar, desinfectar y secar",
+          "interval": "diaria",
+          "source_note": "CLEANING — DISASSEMBLY FOR CLEANING"
+        },
+        {
+          "id": "hob-hs-03",
+          "title": "Limpiar y desinfectar soporte del afilador y zonas de contacto frecuente",
+          "interval": "diaria",
+          "source_note": "CLEANING — general cleaning / Sharpener Mount hardware"
+        },
+        {
+          "id": "hob-hs-04",
+          "title": "Afilar cuchilla solo cuando sea necesario (15 s con palanca); limpiar después",
+          "interval": "cuando_indique",
+          "source_note": "MAINTENANCE — KNIFE SHARPENING: Sharpen only when necessary"
+        },
+        {
+          "id": "hob-hs-05",
+          "title": "Lubricar varilla del carro (Carriage Slide Rod) con Lubriplate FMO-200-AW (4–5 gotas por lado)",
+          "interval": "mensual",
+          "source_note": "MAINTENANCE — LUBRICATION — CARRIAGE SLIDE ROD: Once monthly"
+        },
+        {
+          "id": "hob-hs-06",
+          "title": "Lubricar varilla del prensa (Meat Grip Slide Rod) si hay resistencia",
+          "interval": "cuando_indique",
+          "source_note": "MAINTENANCE — LUBRICATION — MEAT GRIP SLIDE ROD: periodically or when resistance is felt"
+        },
+        {
+          "id": "hob-hs-07",
+          "title": "Servicio y ajustes solo por servicio autorizado Hobart",
+          "interval": "anual",
+          "source_note": "MAINTENANCE — SERVICE: Contact your local Hobart-authorized service office"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Hobart — MODEL HS SERIES SLICERS Installation, Operation and Care (Form 35284)",
+          "url": "https://www.webstaurantstore.com/documents/pdf/hs_manual.pdf"
+        },
+        {
+          "name": "Hobart — HS9/HS9N Operator Resources",
+          "url": "https://www.hobartcorp.com/hs9hs9n-operator-resources"
+        }
+      ]
+    },
+    {
+      "category": "Cámara frigorífica",
+      "brand": "True Manufacturing",
+      "model": "T-49-HC (serie T Traditional Reach-In)",
+      "manual_url": "https://www.truemfg.com/wp-content/uploads/2023/12/T_SERIES_ENGLISH.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "true-t49-01",
+          "title": "Verificar que el equipo mantiene la temperatura de producto",
+          "interval": "mensual",
+          "source_note": "T-Series Installation Manual — Recommended Maintenance table (Monthly)"
+        },
+        {
+          "id": "true-t49-02",
+          "title": "Inspeccionar cable de alimentación; sustituir si está dañado",
+          "interval": "mensual",
+          "source_note": "Recommended Maintenance — Inspect power cord (Monthly)"
+        },
+        {
+          "id": "true-t49-03",
+          "title": "Inspeccionar estado general (ruedas, puertas, bisagras) e iluminación",
+          "interval": "mensual",
+          "source_note": "Recommended Maintenance — overall condition / lamps (Monthly)"
+        },
+        {
+          "id": "true-t49-04",
+          "title": "Limpiar serpentín del condensador (polvo/residuos, frontal y posterior)",
+          "interval": "mensual",
+          "source_note": "Recommended Maintenance + Condenser Coil Cleaning §"
+        },
+        {
+          "id": "true-t49-05",
+          "title": "Comprobar juntas de puerta (estado y estanqueidad)",
+          "interval": "trimestral",
+          "source_note": "Recommended Maintenance — gaskets (Quarterly)"
+        },
+        {
+          "id": "true-t49-06",
+          "title": "Comprobar aletas de condensador/evaporador; enderezar si procede; limpiar evaporador",
+          "interval": "trimestral",
+          "source_note": "Recommended Maintenance — coils (Quarterly)"
+        },
+        {
+          "id": "true-t49-07",
+          "title": "Verificar que la línea de drenaje está libre de obstrucciones",
+          "interval": "trimestral",
+          "source_note": "Recommended Maintenance — drain line (Quarterly)"
+        },
+        {
+          "id": "true-t49-08",
+          "title": "Verificar funcionamiento de ventiladores, puertas y cordones; enchufe firme",
+          "interval": "anual",
+          "source_note": "Recommended Maintenance — Annually"
+        },
+        {
+          "id": "true-t49-09",
+          "title": "Limpieza general de superficies y cuidado del acero inoxidable (sin hidrolimpiadora)",
+          "interval": "semanal",
+          "source_note": "General Surface Care & Cleaning / Stainless Steel Care & Cleaning"
+        }
+      ],
+      "sources": [
+        {
+          "name": "True — T-Series Traditional Reach-In Installation Manual (EN)",
+          "url": "https://www.truemfg.com/wp-content/uploads/2023/12/T_SERIES_ENGLISH.pdf"
+        },
+        {
+          "name": "True — Support Manuals",
+          "url": "https://www.truemfg.com/support/manuals/"
+        }
+      ]
+    },
+    {
+      "category": "Cámara frigorífica",
+      "brand": "Foster",
+      "model": "EcoPro G2 EP700H",
+      "manual_url": "http://www.foster-spares.com/data/docs/Operating%20Instructions/G2%20Cab%20&%20Count%20FD1-11%20Ops%20Manual%2000-556483%20Iss7%20(GB).pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "fos-ep-01",
+          "title": "Poner en standby y cortar corriente antes de limpiar",
+          "interval": "diaria",
+          "source_note": "EcoPro G2 Ops Manual — Cleaning and Maintenance: standby then power off"
+        },
+        {
+          "id": "fos-ep-02",
+          "title": "Limpiar exterior e interior con detergente líquido suave; aclarar; sin lejía/ácidos/abrasivos",
+          "interval": "diaria",
+          "source_note": "Cleaning and Maintenance — exterior and interior surfaces"
+        },
+        {
+          "id": "fos-ep-03",
+          "title": "Limpiar juntas con paño jabonoso tibio; secar; inspeccionar y sustituir si dañadas",
+          "interval": "semanal",
+          "source_note": "Cleaning — All gaskets should be inspected on a regular basis"
+        },
+        {
+          "id": "fos-ep-04",
+          "title": "Retirar estantes (lavavajillas) y soportes verticales; lavar y secar",
+          "interval": "semanal",
+          "source_note": "Cleaning — Shelves and their supports"
+        },
+        {
+          "id": "fos-ep-05",
+          "title": "Limpiar condensador (aletas o Stayclear); no dejar depósitos de grasa",
+          "interval": "mensual",
+          "source_note": "Cleaning — Condenser Cleaning; Condenser Clean Warning en alarmas"
+        },
+        {
+          "id": "fos-ep-06",
+          "title": "Comprobar desescarche automático; activar desescarche manual si hace falta",
+          "interval": "cuando_indique",
+          "source_note": "Defrost — fully automatic; manual defrost hold 5 seconds"
+        },
+        {
+          "id": "fos-ep-07",
+          "title": "Mantener holgura de ventilación (≥310 mm arriba, ≥50 mm alrededor)",
+          "interval": "mensual",
+          "source_note": "Clearance (All models)"
+        },
+        {
+          "id": "fos-ep-08",
+          "title": "Servicio si el condensador tiene grasa persistente (puede invalidar garantía)",
+          "interval": "anual",
+          "source_note": "Condenser Cleaning — Failure to maintain the condenser may invalidate the warranty"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Foster — EcoPro G2 Cabinet & Counter Operating Instructions (00-556483 Iss8 GB)",
+          "url": "http://www.foster-spares.com/data/docs/Operating%20Instructions/G2%20Cab%20&%20Count%20FD1-11%20Ops%20Manual%2000-556483%20Iss7%20(GB).pdf"
+        }
+      ]
+    },
+    {
+      "category": "Abatidor",
+      "brand": "Irinox",
+      "model": "MultiFresh MF70.1",
+      "manual_url": "https://cms.skope.com/assets/Uploads/resources/MultiFresh-MF-user-manual.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "irx-mf-01",
+          "title": "Limpiar interior de la cámara al final de cada jornada (agua + detergente neutro no abrasivo)",
+          "interval": "diaria",
+          "source_note": "MultiFresh MF User Manual §4.2 CLEANING THE CHAMBER — end of every working day"
+        },
+        {
+          "id": "irx-mf-02",
+          "title": "Limpieza semanal reforzada de la cámara (paño/esponja; sin chorro a alta presión)",
+          "interval": "semanal",
+          "source_note": "§4.2 — Weekly cleaning is recommended"
+        },
+        {
+          "id": "irx-mf-03",
+          "title": "Limpiar evaporador con cepillo en sentido de las aletas (panel de ventiladores abierto)",
+          "interval": "semanal",
+          "source_note": "§4.2.1 Washing the evaporator"
+        },
+        {
+          "id": "irx-mf-04",
+          "title": "Vaciar y limpiar bandeja de condensados (modelos con unidad incorporada)",
+          "interval": "semanal",
+          "source_note": "§4.2.2 Condensate emptying — Periodically"
+        },
+        {
+          "id": "irx-mf-05",
+          "title": "Limpiar condensador (cepillo no metálico / aspiración; máx. cada 30 días)",
+          "interval": "mensual",
+          "source_note": "§4.3 CLEANING THE CONDENSER — every 30 days maximum"
+        },
+        {
+          "id": "irx-mf-06",
+          "title": "Limpiar red/cilindro Sanigen (si equipado)",
+          "interval": "semestral",
+          "source_note": "Routine maintenance — EVERY 6 MONTHS: Cleaning Sanigen"
+        },
+        {
+          "id": "irx-mf-07",
+          "title": "Sustituir cilindro de vidrio y red exterior Sanigen (código 3880410)",
+          "interval": "anual",
+          "source_note": "YEARLY: replacement of the glass cylinder and external net"
+        },
+        {
+          "id": "irx-mf-08",
+          "title": "Desconectar alimentación antes de cualquier limpieza o mantenimiento rutinario",
+          "interval": "diaria",
+          "source_note": "§4.1 ROUTINE MAINTENANCE — disconnect master switch and plug"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Irinox MultiFresh MF — Operator’s / User manual (Skope CDN)",
+          "url": "https://cms.skope.com/assets/Uploads/resources/MultiFresh-MF-user-manual.pdf"
+        },
+        {
+          "name": "Irinox Professional — MultiFresh Next (familia/producto)",
+          "url": "https://www.irinoxprofessional.com/en_be/products/abbattitori/multifresh-next"
+        }
+      ]
+    },
+    {
+      "category": "Máquina de hielo",
+      "brand": "Scotsman",
+      "model": "AC 177 / EC 177 (serie AC-EC)",
+      "manual_url": "https://www.gastrouniversum.de/media/pdf/0d/2c/74/Bedienungsanleitung-Serie-AC-EC-47-177_2018.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "sco-ec-01",
+          "title": "Limpiar o sustituir filtro de aire del condensador (extraer por panel frontal)",
+          "interval": "mensual",
+          "source_note": "Service Manual AC-EC — CLEAN - REPLACE OF AIR CONDENSER FILTER (+ Cleaning Reminder Board)"
+        },
+        {
+          "id": "sco-ec-02",
+          "title": "Limpiar sensores del control de nivel de hielo (ojos IR) con paño suave",
+          "interval": "mensual",
+          "source_note": "MAINTENANCE — Every month clean/wipe the sensing eyes"
+        },
+        {
+          "id": "sco-ec-03",
+          "title": "Revisar y limpiar filtro de línea de agua; comprobar fugas y drenaje del depósito",
+          "interval": "semestral",
+          "source_note": "ICEMAKER maintenance scheduled at least two times per year — water line strainer / drain"
+        },
+        {
+          "id": "sco-ec-04",
+          "title": "Comprobar tamaño/textura de cubitos y calibrar control de tamaño si hace falta",
+          "interval": "semestral",
+          "source_note": "ICEMAKER — Check size, condition and texture of ice cubes"
+        },
+        {
+          "id": "sco-ec-05",
+          "title": "Limpieza y sanitización del sistema de agua, evaporador, bin y pulverizadores (producto Scotsman)",
+          "interval": "semestral",
+          "source_note": "B. CLEANING/SANITISING INSTRUCTIONS OF WATER SYSTEM — al menos 2×/año (según agua/uso)"
+        },
+        {
+          "id": "sco-ec-06",
+          "title": "Sanitizar interior del depósito de almacenamiento con solución anti-algas",
+          "interval": "mensual",
+          "source_note": "Indicación de sanitizar storage bin (sección cleaning/sanitising)"
+        },
+        {
+          "id": "sco-ec-07",
+          "title": "Comprobar fugas de refrigerante (técnico cualificado)",
+          "interval": "semestral",
+          "source_note": "ICEMAKER — Check for refrigerant leaks"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Scotsman — Bedienungsanleitung / Service Manual Serie AC-EC 47–177",
+          "url": "https://www.gastrouniversum.de/media/pdf/0d/2c/74/Bedienungsanleitung-Serie-AC-EC-47-177_2018.pdf"
+        },
+        {
+          "name": "Scotsman — EC177 product sheet (EN)",
+          "url": "https://scotsman.dk/wp-content/uploads/2023/09/ec177_en.pdf"
+        }
+      ]
+    },
+    {
+      "category": "Vacuomeadora",
+      "brand": "Henkelman",
+      "model": "Jumbo 42 (serie Jumbo)",
+      "manual_url": "https://www.horeca.com/files/product/henkelman-manual-jumbo-en.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "hen-jum-01",
+          "title": "Limpiar la máquina (paño húmedo; sin hidrolimpiadora ni disolventes agresivos)",
+          "interval": "diaria",
+          "source_note": "Jumbo User Manual §7.1 Maintenance Schedule — Cleaning the machine Daily; §7.2"
+        },
+        {
+          "id": "hen-jum-02",
+          "title": "Comprobar nivel de aceite de la bomba de vacío",
+          "interval": "semanal",
+          "source_note": "§7.1 — Check the oil level Weekly"
+        },
+        {
+          "id": "hen-jum-03",
+          "title": "Ejecutar programa de limpieza de la bomba (diario si se envasan productos húmedos)",
+          "interval": "semanal",
+          "source_note": "§7.1 — Run the pump cleaning program Weekly (** daily if damp products)"
+        },
+        {
+          "id": "hen-jum-04",
+          "title": "Inspeccionar barras de sellado, siliconas, junta de tapa y tapa plástica",
+          "interval": "semanal",
+          "source_note": "§7.1 — Inspect sealing bars / silicone / lid gasket Weekly"
+        },
+        {
+          "id": "hen-jum-05",
+          "title": "Engrasar pezones de los brazos paralelos (grasa alimentaria aprobada)",
+          "interval": "semestral",
+          "source_note": "§7.1 Lubrication — Every 6 months"
+        },
+        {
+          "id": "hen-jum-06",
+          "title": "Cambiar aceite de la bomba de vacío",
+          "interval": "semestral",
+          "source_note": "§7.1 — Replace the oil of the vacuum pump Every 6 months; §7.7.2"
+        },
+        {
+          "id": "hen-jum-07",
+          "title": "Sustituir hilos de sellado, siliconas de soportes y junta de tapa",
+          "interval": "semestral",
+          "source_note": "§7.1 Replacement — Every 6 months"
+        },
+        {
+          "id": "hen-jum-08",
+          "title": "Sustituir filtro de escape de aceite; servicio profesional del distribuidor",
+          "interval": "anual",
+          "source_note": "§7.1 — Replace oil exhaust filter / Contact dealer Annually"
+        },
+        {
+          "id": "hen-jum-09",
+          "title": "Inspeccionar muelles de la tapa (daños y fijaciones)",
+          "interval": "anual",
+          "source_note": "§7.1 / §7.6 Inspecting the Lid Springs — Annually"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Henkelman — Jumbo/MFP/BLTN/Atmoz User Manual",
+          "url": "https://www.horeca.com/files/product/henkelman-manual-jumbo-en.pdf"
+        }
+      ]
+    },
+    {
+      "category": "Cafetera espresso",
+      "brand": "La Marzocco",
+      "model": "Linea Classic S (AV/EE)",
+      "manual_url": "https://nz.lamarzocco.com/wp-content/uploads/2023/09/MAN.29.1_LINEA_EN_V1.0_ONLINE-1.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "lm-lcs-01",
+          "title": "Backflush de grupos con filtro ciego y detergente espresso; aclarar hasta agua limpia",
+          "interval": "diaria",
+          "source_note": "Operating Manual MAN.29.1 §6 — Cleaning groups and drain wells"
+        },
+        {
+          "id": "lm-lcs-02",
+          "title": "Limpiar filtros y portafiltros (agua/cepillo o remojo con detergente espresso)",
+          "interval": "diaria",
+          "source_note": "§6 — Cleaning filters and filter holders (daily)"
+        },
+        {
+          "id": "lm-lcs-03",
+          "title": "Limpiar boquillas de vapor inmediatamente tras uso (paño húmedo + golpe de vapor)",
+          "interval": "diaria",
+          "source_note": "§6 — Cleaning hot water and steam nozzles"
+        },
+        {
+          "id": "lm-lcs-04",
+          "title": "Vaciar y limpiar a fondo la bandeja/colector de drenaje",
+          "interval": "diaria",
+          "source_note": "§6 — Cleaning the drain collector — Remove… every night"
+        },
+        {
+          "id": "lm-lcs-05",
+          "title": "Inspeccionar y limpiar el pozo de drenaje; retirar restos de café",
+          "interval": "semanal",
+          "source_note": "§6 — inspect and clean the drain well at least twice a week"
+        },
+        {
+          "id": "lm-lcs-06",
+          "title": "Limpiar pantallas difusoras / infusion filter (desmontar y remojar en detergente)",
+          "interval": "semanal",
+          "source_note": "§6 — Cleaning diffuser screens (infusion filter)"
+        },
+        {
+          "id": "lm-lcs-07",
+          "title": "Limpiar cuerpo de acero inox (sin alcohol/disolventes en partes pintadas)",
+          "interval": "diaria",
+          "source_note": "§6 — Cleaning the body"
+        },
+        {
+          "id": "lm-lcs-08",
+          "title": "Técnico: sustituir juntas de grupo y pantallas; limpiar sonda autofill; revisar vacío/drenaje",
+          "interval": "trimestral",
+          "source_note": "§8 Mandatory Maintenance — EVERY THREE/FOUR MONTHS"
+        },
+        {
+          "id": "lm-lcs-09",
+          "title": "Técnico: reconstruir ensamblajes de vapor",
+          "interval": "semestral",
+          "source_note": "§8 — EVERY SIX MONTHS"
+        },
+        {
+          "id": "lm-lcs-10",
+          "title": "Vaciar caldera de vapor; sustituir cestillos; revisar válvulas/plunger (técnico)",
+          "interval": "anual",
+          "source_note": "§6 Draining the steam boiler YEARLY + §8 EVERY YEAR"
+        }
+      ],
+      "sources": [
+        {
+          "name": "La Marzocco — Linea Classic Operating Manual MAN.29.1 V1.0",
+          "url": "https://nz.lamarzocco.com/wp-content/uploads/2023/09/MAN.29.1_LINEA_EN_V1.0_ONLINE-1.pdf"
+        },
+        {
+          "name": "La Marzocco USA — Linea Classic S product page",
+          "url": "https://www.lamarzoccousa.com/commercial-products/espresso-machines/linea-classic-s/"
+        }
+      ]
+    },
+    {
+      "category": "Batidora / Cutter industrial",
+      "brand": "Robot-Coupe",
+      "model": "R 502 / R 502 V.V.",
+      "manual_url": "https://assets.catering-appliance.com/content/product-docs/95/2a/r-502-manual.pdf",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "rc-r502-01",
+          "title": "Desenchufar antes de limpiar; nunca sumergir el bloque motor",
+          "interval": "diaria",
+          "source_note": "R 502 Safety & Operating Instructions — CLEANING: before cleaning; Never place the motor unit in water"
+        },
+        {
+          "id": "rc-r502-02",
+          "title": "Limpiar aparato y accesorios al final de cada ciclo de trabajo",
+          "interval": "diaria",
+          "source_note": "CLEANING — Always clean the appliance and its attachments at the end of each cycle"
+        },
+        {
+          "id": "rc-r502-03",
+          "title": "Lavar bowl, tapa, cuchilla y discos; secar; usar detergente apto para aluminio",
+          "interval": "diaria",
+          "source_note": "CLEANING / Bowl cutter attachment; aluminum alloys cleaning fluids"
+        },
+        {
+          "id": "rc-r502-04",
+          "title": "Manejar cuchillas/discos con cuidado (filos); comprobar estado (mellados, oxidados)",
+          "interval": "diaria",
+          "source_note": "SAFETY / WARRANTY — blades; MAINTENANCE Blade"
+        },
+        {
+          "id": "rc-r502-05",
+          "title": "Revisar regularmente juntas y arandelas (motor seal); sustituir si desgastadas",
+          "interval": "mensual",
+          "source_note": "MAINTENANCE — Check the seals and washers regularly; Motor seal"
+        },
+        {
+          "id": "rc-r502-06",
+          "title": "Contactar servicio Robot-Coupe si el cable está dañado o el aparato falla",
+          "interval": "cuando_indique",
+          "source_note": "MAINTENANCE — Do not hesitate to contact your local Maintenance Department"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Robot-Coupe — R 502 / R 502 V.V. / R 752 Safety and operating instructions",
+          "url": "https://assets.catering-appliance.com/content/product-docs/95/2a/r-502-manual.pdf"
+        },
+        {
+          "name": "Robot-Coupe — R 502 product page",
+          "url": "https://www.robot-coupe.com/usa/en_US/p/combination-processors-r-502/18336"
+        }
+      ]
+    },
+    {
+      "category": "Horno combi",
+      "brand": "Angelo Po",
+      "model": "FX101 G2",
+      "manual_url": "https://www.angelopo.com/v-intranet/FileBase/download.asp?cartella=users%2Fshared%2Fpubblica%2Fangelopo.it%2Fallegati%2Flibretti&file=3320190.pdf&r=",
+      "manual_status": "pdf_publico",
+      "tasks": [
+        {
+          "id": "apo-fx-01",
+          "title": "Al final de cada sesión: limpiar cuba de condensados y cámara de cocción",
+          "interval": "diaria",
+          "source_note": "Angelo Po FX Installation and Operation Manual §6 Maintenance — At the end of each session"
+        },
+        {
+          "id": "apo-fx-02",
+          "title": "Comprobar toma de aire de combustión; limpiar si está obstruida (modelos gas)",
+          "interval": "diaria",
+          "source_note": "§6 — combustion air intake… clean it"
+        },
+        {
+          "id": "apo-fx-03",
+          "title": "Revisar y limpiar filtro de aire bajo el aparato (si instalado)",
+          "interval": "semanal",
+          "source_note": "§6 — Check air filter (if installed) located under the appliance"
+        },
+        {
+          "id": "apo-fx-04",
+          "title": "Limpiar el equipo y el entorno inmediato (higiene alimentaria)",
+          "interval": "diaria",
+          "source_note": "§6 — Appliance and the surrounding environment; Recommendations for cleaning"
+        },
+        {
+          "id": "apo-fx-05",
+          "title": "Limpiar conducto de ventilación/vent (cada 2 meses si se cocina carne/grasa a menudo)",
+          "interval": "bimestral",
+          "source_note": "§6 WARNING — At least once every 6 months or… every 2 months clean the vent"
+        },
+        {
+          "id": "apo-fx-06",
+          "title": "Servicio anual: presión de gas, juntas intercambiador, bujías, filtro de agua, desagües, CO/CO2",
+          "interval": "anual",
+          "source_note": "§6 — Every year, have skilled, authorized personnel perform…"
+        }
+      ],
+      "sources": [
+        {
+          "name": "Angelo Po — FX101 G2 Installation and Operation Manual (3320190)",
+          "url": "https://www.angelopo.com/v-intranet/FileBase/download.asp?cartella=users%2Fshared%2Fpubblica%2Fangelopo.it%2Fallegati%2Flibretti&file=3320190.pdf&r="
+        },
+        {
+          "name": "Angelo Po — Documents portal",
+          "url": "https://docs.angelopo.com/en/"
+        }
+      ]
+    },
+    {
+      "category": "Campana extractora",
+      "brand": "Giatsu SoftAir",
+      "model": "Campana central SoftAir (gama hostelería — modelo exacto no fijado)",
+      "manual_url": "https://giatsu.com/",
+      "manual_status": "sin_pdf_publico",
+      "tasks": [],
+      "sources": [
+        {
+          "name": "Giatsu — sitio fabricante (sin PDF de campana SoftAir verificado en esta investigación)",
+          "url": "https://giatsu.com/"
+        }
+      ],
+      "notes": "HUECO: no se encontró PDF público verificable del manual de la campana SoftAir. No se incluye checklist derivado de manual. Alternativa: pedir manual al instalador/distribuidor o usar ficha de proyecto; tareas genéricas de filtros antigrasa NO se listan aquí para no inventar intervalos."
+    },
+    {
+      "category": "Máquina de hielo",
+      "brand": "Hoshizaki",
+      "model": "IM-240DNS / IM-240NE",
+      "manual_url": "https://www.hoshizakiamerica.com/support/manuals/",
+      "manual_status": "pagina_soporte",
+      "tasks": [],
+      "sources": [
+        {
+          "name": "Hoshizaki America — Manuals & Guides (portal; requiere modelo/serie)",
+          "url": "https://www.hoshizakiamerica.com/support/manuals/"
+        }
+      ],
+      "notes": "URLs de PDF espejo (hoshizaki.com.sg / hoshizaki-sea.com) devolvieron error o HTML (~236 B / 7 KB), no usable. Checklist vacío hasta obtener PDF oficial verificado. Scotsman AC/EC 177 cubre la categoría con PDF verificado."
+    }
+  ],
+  "legal_note": "Los manuales de fabricante están protegidos por copyright (Directiva 2001/29/CE y TRLPI en España). Se puede ENLAZAR a la página oficial de descarga o al PDF publicado por el fabricante/distribuidor autorizado; NO se debe redistribuir, alojar ni copiar el PDF completo en la app ni en repositorios. El checklist debe citar la fuente (sección/página) y ser un resumen operativo, no una reproducción literal del manual. El usuario final debe conservar el manual original del equipo. La app no sustituye el mantenimiento técnico autorizado ni las obligaciones de seguridad alimentaria (APPCC/HACCP).",
+  "coverage_summary": {
+    "total": 15,
+    "with_verifiable_manual": 13,
+    "pagina_soporte": 1,
+    "sin_pdf": 1
+  },
+  "verification_notes": [
+    "URLs comprobadas con HTTP GET (200 + application/pdf) el 2026-09-26 (CEST/UTC+2).",
+    "Rational: PDF oficial ~30 MB vía toolbox.rational-online.com (redirige desde HCMS).",
+    "Winterhalter: PDF oficial media.winterhalter.com assetId=516749.",
+    "Electrolux freidora/plancha: tools.electroluxprofessional.com Mirror/Doc.",
+    "Hobart HS: espejo WebstaurantStore del Form 35284 (manual Hobart); página operator resources hobartcorp.com verificada.",
+    "Henkelman/Robot-Coupe/Scotsman/Irinox: espejos de distribuidores con PDF del manual de fabricante verificados.",
+    "Foster fridge.com devolvió 403; se usó foster-spares.com (200 PDF).",
+    "Hoshizaki PDF espejo falló verificación; portal de soporte OK.",
+    "Campana SoftAir: sin PDF público localizado."
+  ]
+}

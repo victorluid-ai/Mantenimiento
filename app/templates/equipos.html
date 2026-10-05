@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% block title %}Equipos — {{ app_name }}{% endblock %}
+{% block content %}
+<header class="page-header">
+  <div>
+    <p class="eyebrow">Inventario</p>
+    <h1>Equipamiento</h1>
+  </div>
+  <form method="get" action="/equipos" class="inline-filter">
+    <label>
+      Filtrar restaurante
+      <select name="restaurant_id" onchange="this.form.submit()">
+        <option value="">Todos</option>
+        {% for r in restaurants %}
+        <option value="{{ r.id }}" {% if filter_restaurant == r.id %}selected{% endif %}>{{ r.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+  </form>
+</header>
+
+<section class="layout-form">
+  <div class="list-stack">
+    {% for e in equipment %}
+    <article class="row-item machine-card">
+      <div class="machine-top">
+        <div>
+          <strong>{{ e.name }}</strong>
+          <span>{{ e.type_name }} · {{ e.restaurant_name }}</span>
+          <span class="muted">{{ e.brand or '' }} {{ e.model or '' }}{% if e.serial_number %} · {{ e.serial_number }}{% endif %}</span>
+          {% if e.task_count %}
+          <span class="muted">{{ e.tasks_done }} de {{ e.task_count }} tareas hechas</span>
+          {% endif %}
+        </div>
+        <div class="row-meta">
+          <span class="status status-{{ e.status }}">{{ e.status.replace('_', ' ') }}</span>
+          {% if e.manual_href %}
+          <a class="manual-link" href="{{ e.manual_href }}" target="_blank" rel="noopener noreferrer">{{ e.manual_link_label }}</a>
+          {% endif %}
+        </div>
+      </div>
+      {% if e.tasks %}
+      <ul class="checklist">
+        {% for task in e.tasks %}
+        <li class="check-item{% if task.status == 'done' %} is-done{% endif %}">
+          <form method="post" action="/equipos/{{ e.id }}/tareas/{{ task.id }}">
+            <input type="hidden" name="status" value="{{ 'pending' if task.status == 'done' else 'done' }}" />
+            {% if filter_restaurant %}
+            <input type="hidden" name="restaurant_id" value="{{ filter_restaurant }}" />
+            {% endif %}
+            <button class="btn btn-ghost task-toggle" type="submit">{{ 'Hecho' if task.status == 'done' else 'Pendiente' }}</button>
+          </form>
+          <div>
+            <strong>{{ task.title }}</strong>
+            <span>{{ task.interval_text }}{% if task.source_note %} · {{ task.source_note }}{% endif %}</span>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% elif e.catalog_key %}
+      <p class="gap-note">{{ e.catalog_notes or 'Este modelo no tiene checklist en el catálogo.' }}</p>
+      {% endif %}
+    </article>
+    {% else %}
+    <p class="empty">No hay equipos con este filtro.</p>
+    {% endfor %}
+  </div>
+
+  <form class="compose" method="post" action="/equipos" id="equipment-form">
+    <h2>Registrar equipo</h2>
+    <label>Catálogo real
+      <select name="catalog_key" id="catalog-key">
+        <option value="">Alta manual, sin modelo del catálogo</option>
+        {% for item in catalog %}
+        <option value="{{ item.key }}">{{ item.category }} — {{ item.brand }} {{ item.model }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <p id="catalog-preview" class="catalog-preview" hidden>
+      <a id="catalog-manual" href="" target="_blank" rel="noopener noreferrer"></a>
+      <span id="catalog-summary"></span>
+    </p>
+    <label>Restaurante
+      <select name="restaurant_id" required>
+        {% for r in restaurants %}
+        <option value="{{ r.id }}">{{ r.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>Tipo
+      <select name="equipment_type_id" id="equipment-type" required>
+        {% for t in types %}
+        <option value="{{ t.id }}">{{ t.name }} (cada {{ t.default_interval_days }} días)</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>Nombre
+      <input name="name" id="equipment-name" required placeholder="Nombre en cocina" />
+    </label>
+    <div class="form-grid">
+      <label>Marca
+        <input name="brand" id="equipment-brand" placeholder="Josper" />
+      </label>
+      <label>Modelo
+        <input name="model" id="equipment-model" placeholder="HJX-25" />
+      </label>
+    </div>
+    <label>Nº de serie
+      <input name="serial_number" />
+    </label>
+    <label>Ubicación en cocina
+      <input name="location_note" placeholder="Línea caliente" />
+    </label>
+    <label>Estado
+      <select name="status">
+        <option value="operativo">Operativo</option>
+        <option value="en_reparacion">En reparación</option>
+        <option value="fuera_servicio">Fuera de servicio</option>
+      </select>
+    </label>
+    <button class="btn btn-primary" type="submit">Añadir equipo + plan preventivo</button>
+  </form>
+</section>
+<p class="legal-inline legal-block">{{ legal_note }}</p>
+<script id="catalog-data" type="application/json">{{ catalog | tojson }}</script>
+<script>
+  const catalogItems = JSON.parse(document.getElementById("catalog-data").textContent);
+  const catalogSelect = document.getElementById("catalog-key");
+  const preview = document.getElementById("catalog-preview");
+  const manualLink = document.getElementById("catalog-manual");
+  const summary = document.getElementById("catalog-summary");
+  const nameInput = document.getElementById("equipment-name");
+  const brandInput = document.getElementById("equipment-brand");
+  const modelInput = document.getElementById("equipment-model");
+  const typeSelect = document.getElementById("equipment-type");
+  let lastAutoName = "";
+
+  function applyCatalog() {
+    const item = catalogItems.find((entry) => entry.key === catalogSelect.value);
+    const fromCatalog = Boolean(item);
+    brandInput.readOnly = fromCatalog;
+    modelInput.readOnly = fromCatalog;
+    if (!item) {
+      preview.hidden = true;
+      return;
+    }
+    brandInput.value = item.brand;
+    modelInput.value = item.model;
+    if (!nameInput.value || nameInput.value === lastAutoName) {
+      nameInput.value = item.brand;
+      lastAutoName = item.brand;
+    }
+    if (item.suggested_type_name) {
+      const match = [...typeSelect.options].find((option) => option.text.startsWith(item.suggested_type_name));
+      if (match) typeSelect.value = match.value;
+    }
+    const href = item.manual_url && /^https?:\/\//.test(item.manual_url) ? item.manual_url : "";
+    if (href) {
+      manualLink.href = href;
+      manualLink.textContent = item.link_label;
+      manualLink.hidden = false;
+    } else {
+      manualLink.hidden = true;
+    }
+    if (item.notes) summary.textContent = item.notes;
+    else if (item.task_count === 0) summary.textContent = "Este modelo no trae checklist.";
+    else summary.textContent = item.task_count === 1
+      ? "1 tarea preventiva, pendiente al dar de alta."
+      : item.task_count + " tareas preventivas, pendientes al dar de alta.";
+    preview.hidden = false;
+  }
+
+  catalogSelect.addEventListener("change", applyCatalog);
+</script>
+{% endblock %}
